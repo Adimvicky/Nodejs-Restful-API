@@ -2,7 +2,7 @@ const express = require('express'),
       bodyParser = require('body-parser'),
       mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/mongomovies');
+mongoose.connect('mongodb://localhost/moviedb'); 
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'Connection Error'));
